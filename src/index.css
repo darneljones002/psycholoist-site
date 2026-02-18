@@ -1,28 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light;
   --brand-ink: #0B1B2B;
+  --brand-sky: #D7F0FF;
+  --brand-mint: #DFF7EC;
+  --brand-lilac: #EDE3FF;
 }
 
-@layer base {
-  body { @apply bg-white antialiased; color: var(--brand-ink); }
-  a { @apply underline-offset-4; }
-}
-
-@layer components {
-  .container-pad { @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8; }
-  .card { @apply rounded-2xl bg-white shadow-lg ring-1 ring-black/5; }
-
-  .btn { 
-    @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold
-           focus:outline-none focus-visible:ring-4 focus-visible:ring-yellow-200/70
-           transition active:translate-y-[1px];
-  }
-
-  /* IMPORTANT: do NOT do "@apply btn ..." */
-  .btn-primary { @apply bg-blue-600 text-white hover:bg-blue-700; }
-  .btn-ghost { @apply bg-white ring-1 ring-black/10 hover:bg-black/5; }
-
-  .chip { @apply inline-flex items-center rounded-full bg-black/5 px-3 py-1 text-sm font-medium; }
+body {
+  color: var(--brand-ink);
 }
