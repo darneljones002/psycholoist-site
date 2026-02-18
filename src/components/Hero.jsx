@@ -1,3 +1,5 @@
+import headshot from "../assets/jones.jpg";
+
 export default function Hero() {
   return (
     <section className="relative py-20">
@@ -16,18 +18,36 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex gap-4 flex-wrap">
-            <a href="#contact" className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700"
+            >
               Start Intake
             </a>
-            <a href="#specialties" className="px-6 py-3 rounded-xl border border-gray-300 hover:bg-gray-100">
+            <a
+              href="#specialties"
+              className="px-6 py-3 rounded-xl border border-gray-300 hover:bg-gray-100"
+            >
               View Specialties
             </a>
           </div>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-6">
-          <h2 className="text-xl font-bold">What Families Can Expect</h2>
-          <ul className="mt-4 space-y-3 text-gray-700">
+          <div className="flex items-center gap-4">
+            <img
+              src={headshot}
+              alt="Bryana Gadis-Jones, PsyD"
+              className="h-20 w-20 rounded-2xl object-cover ring-1 ring-black/10"
+            />
+            <div>
+              <h2 className="text-xl font-extrabold">Bryana Gadis-Jones, PsyD</h2>
+              <p className="text-gray-600 font-semibold">Post-Doctoral Fellow</p>
+            </div>
+          </div>
+
+          <h3 className="mt-6 text-lg font-bold">What Families Can Expect</h3>
+          <ul className="mt-3 space-y-2 text-gray-700">
             <li>• Calm and structured sessions</li>
             <li>• Parent collaboration and coaching</li>
             <li>• Practical strategies for home</li>
